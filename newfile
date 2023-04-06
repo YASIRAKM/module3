@@ -1,0 +1,16 @@
+# given number
+num = 18
+# intiialize sum of digits to 0
+sum_of_digits = 0
+# copy the number in another variable(duplicate)
+dup_number = num
+# Traverse the digits of number using for loop
+while dup_number > 0:
+    sum_of_digits = sum_of_digits + dup_number % 10
+    dup_number = dup_number // 10
+# It is harshad number if sum of digits is equal to given number
+
+if(num % sum_of_digits == 0):
+    print(num, "is harshad number")
+else:
+    print(num, "is not harshad number")
